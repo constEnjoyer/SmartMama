@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Обновил шрифты на DM Sans и Playfair Display */
+  --font-sans: var(--font-dm-sans);
+  --font-display: var(--font-playfair);
+
+  /* Softer, pregnancy-friendly color palette with gentle pastels */
+  --color-background: 330 100% 98%;
+  --color-foreground: 340 15% 25%;
+  --color-card: 0 0% 100%;
+  --color-card-foreground: 340 15% 25%;
+  --color-popover: 0 0% 100%;
+  --color-popover-foreground: 340 15% 25%;
+  --color-primary: 340 75% 75%;
+  --color-primary-foreground: 0 0% 100%;
+  --color-secondary: 280 60% 92%;
+  --color-secondary-foreground: 340 15% 25%;
+  --color-muted: 330 40% 95%;
+  --color-muted-foreground: 340 10% 50%;
+  --color-accent: 320 70% 88%;
+  --color-accent-foreground: 340 15% 25%;
+  --color-destructive: 0 70% 70%;
+  --color-destructive-foreground: 0 0% 100%;
+  --color-border: 330 30% 90%;
+  --color-input: 330 30% 90%;
+  --color-ring: 340 75% 75%;
+  --radius: 0.75rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  @theme inline {
+    --color-background: 340 20% 12%;
+    --color-foreground: 330 100% 98%;
+    --color-card: 340 18% 15%;
+    --color-card-foreground: 330 100% 98%;
+    --color-popover: 340 18% 15%;
+    --color-popover-foreground: 330 100% 98%;
+    --color-primary: 340 75% 75%;
+    --color-primary-foreground: 340 20% 12%;
+    --color-secondary: 340 15% 20%;
+    --color-secondary-foreground: 330 100% 98%;
+    --color-muted: 340 15% 20%;
+    --color-muted-foreground: 330 30% 70%;
+    --color-accent: 340 15% 20%;
+    --color-accent-foreground: 330 100% 98%;
+    --color-destructive: 0 70% 50%;
+    --color-destructive-foreground: 330 100% 98%;
+    --color-border: 340 15% 20%;
+    --color-input: 340 15% 20%;
+    --color-ring: 340 75% 75%;
+  }
+}
+
+/* Added utility class for display font */
+.font-display {
+  font-family: var(--font-display);
+}
